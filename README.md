@@ -1,38 +1,20 @@
-# analyze-the-customer-funnel-of-Metrocar
-a ride-sharing app (similar to Uber/Lyft)
-Dataset structure
+Project Summary: Analyzing the Customer Funnel of Metrocar             ![image](https://github.com/Roshano1/analyze-the-customer-funnel-of-Metrocar/assets/108745256/255a7dc4-ea83-41ed-879a-ff3130a91d44)
+    
 
-You can find a description of each table and its columns below.
+The project focuses on analyzing user ride activity data from Metrocar, a ride-sharing app similar to Uber. The objective is to understand and optimize the sales funnel for users who downloaded the app in 2021, thereby improving revenue and user engagement.
 
-app_downloads: contains information about app downloads
-app_download_key: unique id of an app download
-platform: ios, android or web
-download_ts: download timestamp
-signups: contains information about new user signups
-user_id: primary id for a user
-session_id: id of app download
-signup_ts: signup timestamp
-age_range: the age range the user belongs to
-ride_requests: contains information about rides
-ride_id: primary id for a ride
-user_id: foreign key to user (requester)
-driver_id: foreign key to driver
-request_ts: ride request timestamp
-accept_ts: driver accept timestamp
-pickup_location: pickup coordinates
-destination_location: destination coordinates
-pickup_ts: pickup timestamp
-dropoff_ts: dropoff timestamp
-cancel_ts: ride cancel timestamp (accept, pickup and dropoff timestamps may be null)
-transactions: contains information about financial transactions based on completed rides:
-ride_id: foreign key to ride
-purchase_amount_usd: purchase amount in USD
-charge_status: approved, cancelled
-transaction_ts: transaction timestamp
-reviews: contains information about driver reviews once rides are completed
-review_id: primary id of review
-ride_id: foreign key to ride
-driver_id: foreign key to driver
-user_id: foreign key to user (requester)
-rating: rating from 0 to 5
-free_response: text response given by user/requester
+Key Highlights:
+
+Data Aggregation and Analysis: The project involves aggregating and analyzing data using SQL and creating a sales funnel in Tableau. The data set comprises information about app downloads, user sign-ups, ride requests, financial transactions, and driver reviews.
+
+User Funnel Analysis: The user funnel tracks the journey from app download to ride review. Notable drop-offs occur between app download and sign-up, and between ride request and ride completion. Recommendations include improving the app's landing page and addressing issues related to ride requests.
+
+Ride Funnel Analysis: The ride funnel examines the trajectory of rides from request to review. The primary drop-off is observed between rides requested and rides accepted. Strategies to reduce this drop-off include implementing price surging during peak hours.
+
+Target Audience Identification: Users aged 35 to 44, primarily on iOS devices, are identified as the most frequent riders. Recommendations focus on engaging this group and expanding to users aged 25 to 34.
+
+In conclusion, the project offers insights into Metrocar's sales funnel, identifies areas for improvement, and provides actionable recommendations to enhance user engagement and revenue generation.
+
+
+
+This project aids Metrocar in making data-driven decisions and optimizing its business strategy for the future.
