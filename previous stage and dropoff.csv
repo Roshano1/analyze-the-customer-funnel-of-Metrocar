@@ -1,0 +1,7 @@
+"funnel_step","funnel_name","value","previous_stage","dropoff_from_previous_stage"
+"1","downloads","23608","",""
+"2","signups","17623","23608","0.254"
+"3","requested_ride","12406","17623","0.296"
+"4","completed_ride","6233","12406","0.498"
+"5","payments","6233","6233","0.000"
+"6","reviews","4348","6233","0.302"
